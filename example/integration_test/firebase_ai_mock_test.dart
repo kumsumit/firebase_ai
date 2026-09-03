@@ -22,7 +22,6 @@ import 'package:firebase_ai/src/client.dart';
 import 'package:firebase_ai/src/base_model.dart';
 import 'package:firebase_ai/src/content.dart';
 import 'package:firebase_ai/src/chat.dart';
-import 'package:firebase_ai_example/firebase_options.dart';
 
 class MockApiClient implements ApiClient {
   final List<Map<String, Object?>> requests = [];
@@ -56,7 +55,6 @@ void main() {
       // Use a named app to avoid conflict with the default app initialized by mocks
       await Firebase.initializeApp(
         name: 'mockTestApp',
-        options: DefaultFirebaseOptions.currentPlatform,
       );
     });
 

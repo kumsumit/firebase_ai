@@ -33,7 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_animate: ^4.5.2
-  flutter_markdown: ^0.7.7+1
+  flutter_markdown_plus: ^1.0.12
   flutter_soloud: ^4.1.7
   image: 
     git: https://github.com/kumsumit/image.git
@@ -61,6 +61,14 @@ dev_dependencies:
   # `integration_test/report_test_results.dart` names each executed test via
   # `package:test_api/hooks.dart`; `any` defers to the version flutter_test pins.
   test_api: any
+
+dependency_overrides:
+  path_provider:
+    git: https://github.com/kumsumit/path_provider.git
+  plugin_platform_interface:
+    git: https://github.com/kumsumit/plugin_platform_interface.git
+
+
 
 flutter:
 

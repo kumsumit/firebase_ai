@@ -21,7 +21,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_core_platform_interface/test.dart';
 import 'package:firebase_ai/src/api.dart';
 import 'package:firebase_ai/src/developer/api.dart';
-import 'package:firebase_ai_example/firebase_options.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
@@ -32,7 +31,6 @@ void main() {
       // Use a named app to avoid conflict with the default app initialized by mocks
       await Firebase.initializeApp(
         name: 'parsingTestApp',
-        options: DefaultFirebaseOptions.currentPlatform,
       );
     });
 

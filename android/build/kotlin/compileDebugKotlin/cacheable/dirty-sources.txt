@@ -1,0 +1,1 @@
+/home/sumit/StudioProjects/flutterfire/packages/firebase_ai/firebase_ai/android/src/main/kotlin/io/flutter/plugins/firebase/ai/FirebaseAIPlugin.kt
